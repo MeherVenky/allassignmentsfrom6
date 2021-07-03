@@ -1,0 +1,23 @@
+import java.util.*;
+class Automorphic_num
+{
+public static void main(String args[])
+{
+
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int c=n*n;
+if(c%10==n)
+{
+System.out.println("it is Automorphic as "+n+"*"+n+" = "+c);
+}
+else if(c%100==n)
+{
+System.out.println("it is Automorphic as "+n+"*"+n+" = "+c);
+}
+else
+{
+System.out.println("it is not a Automorphic as "+n+"*"+n+" = "+c);
+}
+}
+}
