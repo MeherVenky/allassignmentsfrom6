@@ -1,0 +1,29 @@
+import java.util.*;
+class sumof_String
+{
+public static void main(String args[])
+{
+
+String str;
+int sum=0;
+System.out.println("Enter any string ");
+Scanner sc=new Scanner(System.in);
+str=sc.nextLine();
+String s[]=str.split(" ");
+int n=s.length;
+if(n==0){
+
+System.out.println(n);
+}
+else{
+
+ for(int i=0;i<n;i++){
+  String s1=s[i];
+  int num=s1.length();
+  sum=sum+num;
+
+}
+System.out.println(sum);
+ }  
+}
+}  
