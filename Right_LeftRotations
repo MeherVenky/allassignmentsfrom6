@@ -1,0 +1,49 @@
+import java.util.*;
+class Right_LeftRotations
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println(" Enter size");
+int n=sc.nextInt();
+System.out.println(" Enter no of right rotations you need");
+int r=sc.nextInt();
+System.out.println(" Enter no of left rotations you need");
+int l=sc.nextInt();
+int a[]=new int[n];
+int b[]=new int[n];
+System.out.println(" Enter elements in array");
+  for(int i=0;i<n;i++){
+   a[i]=sc.nextInt();
+}
+
+for(int i=n-1;i>=0;i--)
+{
+if((i+r)>=n)
+{
+b[r-(n-i)]=a[i];
+}
+else
+b[i+r]=a[i];
+}
+System.out.print("After right rotation =  ");
+for(int i=0;i<n;i++){
+System.out.print("  "+b[i]);
+}
+System.out.println();
+
+for(int i=0;i<n;i++)
+{
+if((i-l)<0)
+{
+b[n+i-l]=a[i];
+}
+else
+b[i-l]=a[i];
+}
+System.out.print("After left rotation =  ");
+for(int i=0;i<n;i++){
+System.out.print("  "+b[i]);
+}
+}
+}
