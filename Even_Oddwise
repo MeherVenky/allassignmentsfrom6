@@ -1,0 +1,31 @@
+import java.util.*;
+class Even_Oddwise
+{
+public static void main(String args[])
+{
+String st;
+int i,k;
+Scanner sc=new Scanner(System.in);
+st=sc.next();
+int n=st.length();
+for(i=0;i<n;i++)
+{
+k=i+1;
+if(k%2==1)
+{
+System.out.print(st.charAt(i));
+}
+}
+System.out.print(" ");
+for(i=0;i<n;i++)
+{
+k=i+1;
+if(k%2==0)
+{
+System.out.print(st.charAt(i));
+}
+}
+
+}
+}
+  
