@@ -1,0 +1,21 @@
+import java.util.*;
+class Array_List{
+public static void main(String args[]){
+ArrayList<Integer> a=new ArrayList<Integer>();
+ArrayList<Integer> b=new ArrayList<Integer>();
+ArrayList<Integer> c=new ArrayList<Integer>();
+a.add(11);
+a.add(20);
+a.add(30);
+a.add(40);
+
+b.add(50);
+b.add(60);
+b.add(70);
+b.add(80);
+
+c.addAll(a);
+c.addAll(b);
+System.out.println(c);
+} 
+}
