@@ -8,12 +8,12 @@ a.add(11);
 a.add(20);
 a.add(30);
 a.add(40);
-
+System.out.println(a);
 b.add(50);
 b.add(60);
 b.add(70);
 b.add(80);
-
+System.out.println(b);
 c.addAll(a);
 c.addAll(b);
 System.out.println(c);
