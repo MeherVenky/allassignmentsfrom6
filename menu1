@@ -1,0 +1,43 @@
+import java.util.*;
+class menu1{
+public static void main(String args[]){
+Scanner sc = new Scanner(System.in);
+LinkedList<Integer> a=new LinkedList<Integer>();
+int n,ch,i;
+System.out.println(" 1.BegingInsert \n 2.EndInsert \n 3.Position Insert \n 4.Besing Delete \n 5.End Delete \n 6.Position Delete \n 7.Display \n 8.Exit \n ....Enter your Choice:");
+ch=sc.nextInt();
+do
+{
+switch(ch){
+case 1:System.out.println("Enter n value");
+       n=sc.nextInt();
+       a.addFirst(n);
+       break;
+case 2:System.out.println("Enter n value");
+       n=sc.nextInt();
+       a.addLast(n);
+        break;
+case 3:System.out.println("Enter the element at a position");
+       i=sc.nextInt();
+       n=sc.nextInt();
+       a.add(i,n);
+      break;
+case 4:System.out.println("It removed first elements");
+       a.removeFirst();
+        break;
+case 5:System.out.println("It removed last elements");
+       a.removeLast();
+        break;
+case 6:System.out.println("Enter the position to remove element");
+       i=sc.nextInt();
+       a.remove(i);
+        break;
+case 7:System.out.println(a);
+      break;
+
+       
+} 
+System.out.println("  1.BegingInsert \n 2.EndInsert \n 3.Position Insert \n 4.Besing Delete \n 5.End Delete \n 6.Position Delete \n 7.Display \n 8.Exit \n ....Enter your Choice:");
+ch=sc.nextInt();
+}while(ch<8);
+}
