@@ -41,3 +41,4 @@ System.out.println("  1.BegingInsert \n 2.EndInsert \n 3.Position Insert \n 4.Be
 ch=sc.nextInt();
 }while(ch<8);
 }
+}
