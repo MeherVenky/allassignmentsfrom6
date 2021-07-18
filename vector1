@@ -1,0 +1,30 @@
+import java.util.*;
+class vector1{
+public static void main(String args[]){
+Vector v=new Vector();
+Scanner sc=new Scanner(System.in);
+v.add(101);
+v.add("Rama");
+v.add(6.58);
+v.add(102);
+v.add("Gita");
+v.add(8.98);
+System.out.println(v);
+System.out.println("Enter the index value you want to delete");
+int n=sc.nextInt();
+v.remove(n);
+for (int i = 0; i < v.size(); i++){
+         System.out.print(v.get(i) + " ");
+    }
+System.out.println();
+System.out.println("Enter the index value to replace with other number");
+int in=sc.nextInt();
+System.out.println("Enter the value to replace");
+String o=sc.next();
+v.set(in,o);
+
+for (int i = 0; i < v.size(); i++){
+         System.out.print(v.get(i) + " ");
+   }
+}
+}
