@@ -1,0 +1,19 @@
+import java.util.*;
+class HashMap1{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+HashMap<Integer,String> h1=new HashMap<Integer,String>();
+int key;
+String value;
+for(int i=1;i<=n;i++){
+key=sc.nextInt();
+value=sc.next();
+h1.put(key,value);
+}
+System.out.println(h1);
+TreeMap<Integer,String> t1=new TreeMap<Integer,String>(h1);
+System.out.println("After sorted ");
+System.out.println(t1);
+}
+}
