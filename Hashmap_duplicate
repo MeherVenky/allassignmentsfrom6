@@ -1,0 +1,19 @@
+import java.util.*;
+class Hashmap_duplicate{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+HashMap<Integer,Integer> h1=new HashMap<Integer,Integer>();
+int a[]=new int[n];
+for(int i=0;i<n;i++){
+a[i]=sc.nextInt();
+}
+for(int i=0;i<a.length;i++){
+if(h1.containsKey(a[i]))
+h1.put(a[i],h1.get(a[i])+1);
+else
+h1.put(a[i],1);
+}
+System.out.println(h1);
+}
+}
