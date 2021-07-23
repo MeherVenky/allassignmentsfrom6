@@ -20,8 +20,7 @@ for (Map.Entry<Integer, Integer> i : h1.entrySet())
 {
 if(i.getKey()==r)
 h1.replace(r,h1.get(r)+5000);
-//else
-//System.out.println("Value Not Found");
+
 }
 System.out.println(h1);
 }
