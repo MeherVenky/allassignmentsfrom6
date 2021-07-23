@@ -1,0 +1,28 @@
+import java.util.*;
+class replacein_haspmap{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter n value");
+int n=sc.nextInt();
+HashMap<Integer,Integer> h1=new HashMap<Integer,Integer>();
+int key;
+int value;
+System.out.println("Enter key value pairs");
+for(int i=0;i<n;i++){
+key=sc.nextInt();
+value=sc.nextInt();
+h1.put(key,value);
+}
+System.out.println(h1);
+System.out.println("Enter key to sreach");
+int r=sc.nextInt();
+for (Map.Entry<Integer, Integer> i : h1.entrySet())
+{
+if(i.getKey()==r)
+h1.replace(r,h1.get(r)+5000);
+//else
+//System.out.println("Value Not Found");
+}
+System.out.println(h1);
+}
+}
